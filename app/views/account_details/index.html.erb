@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Account Details</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Account name</th>
+      <th>Amount</th>
+      <th>Credit</th>
+      <th>Debit</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @account_details.each do |account_detail| %>
+      <tr>
+        <td><%= account_detail.account_name %></td>
+        <td><%= account_detail.amount %></td>
+        <td><%= account_detail.credit %></td>
+        <td><%= account_detail.debit %></td>
+        <td><%= account_detail.description %></td>
+        <td><%= link_to 'Show', account_detail %></td>
+        <td><%= link_to 'Edit', edit_account_detail_path(account_detail) %></td>
+        <td><%= link_to 'Destroy', account_detail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Account Detail', new_account_detail_path %>
