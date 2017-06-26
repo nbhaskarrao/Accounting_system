@@ -5,7 +5,10 @@ class AccountDetailsController < ApplicationController
   # GET /account_details.json
   def index
     @account_details = AccountDetail.all
+<<<<<<< HEAD
     @partner_details = PartnerDetail.all
+=======
+>>>>>>> 3817c6139f353c79337e72f482304d30e6969c11
   end
 
   # GET /account_details/1

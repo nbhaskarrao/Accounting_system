@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170625113732) do
+=======
+ActiveRecord::Schema.define(version: 20170624055347) do
+>>>>>>> 3817c6139f353c79337e72f482304d30e6969c11
 
   create_table "account_details", force: :cascade do |t|
     t.string   "account_name"
@@ -20,7 +24,10 @@ ActiveRecord::Schema.define(version: 20170625113732) do
     t.text     "description"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+<<<<<<< HEAD
     t.integer  "total"
+=======
+>>>>>>> 3817c6139f353c79337e72f482304d30e6969c11
   end
 
   create_table "partner_details", force: :cascade do |t|
@@ -28,10 +35,16 @@ ActiveRecord::Schema.define(version: 20170625113732) do
     t.integer  "amount"
     t.boolean  "credit"
     t.boolean  "debit"
+<<<<<<< HEAD
     t.text     "description"https://github.com/nbhaskarrao/Accounting_system.git
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
     t.integer  "total"
+=======
+    t.text     "description"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+>>>>>>> 3817c6139f353c79337e72f482304d30e6969c11
   end
 
   create_table "users", force: :cascade do |t|
