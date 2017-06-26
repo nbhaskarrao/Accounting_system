@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  account_name: MyString
+  amount: 1
+  credit: false
+  debit: false
+  description: MyText
+
+two:
+  account_name: MyString
+  amount: 1
+  credit: false
+  debit: false
+  description: MyText
